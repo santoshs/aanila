@@ -48,6 +48,8 @@
  '(show-paren-match ((t (:background "gray12"))))
  '(highlight-changes ((t (:foreground nil :background "midnight blue"))))
  '(highlight-changes-delete ((t (:foreground nil :background "chocolate4" :underline nil))))
+ '(hl-line ((t (:background "gray25"))))
+ '(secondary-selection ((t (:foreground "black" :background "white smoke"))))
  ;; All font locks
  '(font-lock-builtin-face ((t (:foreground "LightSteelBlue"))))
  '(font-lock-comment-face ((t (:foreground "peachpuff3" :italic t :background "gray9"))))
