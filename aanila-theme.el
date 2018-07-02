@@ -66,7 +66,19 @@
  '(isearch ((t (:foreground "red4" :background "CadetBlue4"))))
  '(underline ((t (:underline t))))
  '(italic ((t (:italic t))))
- '(bold-italic ((t (:bold t :italic t)))))
+ '(bold-italic ((t (:bold t :italic t))))
+ ;; auto-completion faces
+ '(ac-candidate-face ((t (:inherit popup-face :background "lightgray"))))
+ '(ac-completion-face ((t (:foreground "SkyBlue1" :underline t))))
+ '(ac-selection-face ((t (:inherit popup-menu-selection-face :background "steelblue"))))
+ ;; helm faces
+ '(helm-ff-directory ((t (:foreground "light slate blue"))))
+ '(helm-ff-dotted-directory ((t (:foreground "khaki4"))))
+ '(helm-selection ((t (:background "gray25" :weight bold))))
+ '(helm-selection-line ((t (:inherit helm-selection))))
+ '(helm-source-header ((t (:inherit font-lock-comment-face))))
+ ;; fixme mode
+ '(fic-face ((t (:inherit font-lock-comment-face :foreground "dark red" :weight bold)))))
 
 ;;;###autoload
 (when load-file-name
