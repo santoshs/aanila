@@ -50,9 +50,10 @@
  '(highlight-changes-delete ((t (:foreground nil :background "chocolate4" :underline nil))))
  '(hl-line ((t (:background "gray25"))))
  '(secondary-selection ((t (:foreground "black" :background "white smoke"))))
+
  ;; All font locks
  '(font-lock-builtin-face ((t (:foreground "LightSteelBlue"))))
- '(font-lock-comment-face ((t (:foreground "peachpuff3" :italic t :background "gray9"))))
+ '(font-lock-comment-face ((t (:foreground "#6b5745" :italic t :background "gray8"))))
  '(font-lock-constant-face ((t (:foreground "indianred"))))
  '(font-lock-doc-string-face ((t (:foreground "SeaGreen2" :bold t))))
  '(font-lock-keyword-face ((t (:foreground "SkyBlue" :bold t))))
@@ -67,18 +68,40 @@
  '(underline ((t (:underline t))))
  '(italic ((t (:italic t))))
  '(bold-italic ((t (:bold t :italic t))))
+
  ;; auto-completion faces
  '(ac-candidate-face ((t (:inherit popup-face :background "lightgray"))))
  '(ac-completion-face ((t (:foreground "SkyBlue1" :underline t))))
  '(ac-selection-face ((t (:inherit popup-menu-selection-face :background "steelblue"))))
+
  ;; helm faces
  '(helm-ff-directory ((t (:foreground "light slate blue"))))
  '(helm-ff-dotted-directory ((t (:foreground "khaki4"))))
  '(helm-selection ((t (:background "gray25" :weight bold))))
  '(helm-selection-line ((t (:inherit helm-selection))))
  '(helm-source-header ((t (:inherit font-lock-comment-face))))
+
  ;; fixme mode
- '(fic-face ((t (:inherit font-lock-comment-face :foreground "dark red" :weight bold)))))
+ '(fic-face ((t (:inherit font-lock-comment-face :foreground "#aa2222" :weight bold))))
+
+ ;; org-mode
+ '(org-agenda-date-today ((t (:foreground "white"
+                                          :slant italic :weight bold))) t)
+ '(org-agenda-structure ((t (:foreground "SlateGray"))))
+ '(org-archived ((t (:foreground "#8f8f8f"))))
+ '(org-checkbox ((t (:background "dimgray" :foreground "WhiteSmoke"
+                                 :box (:line-width 1 :style released-button)))))
+
+ '(org-todo ((t (:bold t :foreground "#cc9393" :weight bold))))
+ '(org-scheduled ((t (:foreground "skyblue"))))
+ '(org-scheduled-previously ((t (:foreground "RoyalBlue"))))
+ '(org-scheduled-today ((t (:foreground "DeepSkyBlue"))))
+ '(org-tag ((t (:bold t :weight bold))))
+ '(org-time-grid ((t (:foreground "DimGray"))))
+ '(org-deadline-announce ((t (:foreground "Salmon"))))
+ '(org-upcoming-deadline ((t (:foreground "Salmon"))))
+ '(org-upcoming-distant-deadline ((t (:foreground "#8c5353"))))
+ '(org-warning ((t (:bold t :foreground "#ff3333" :weight bold)))))
 
 ;;;###autoload
 (when load-file-name
