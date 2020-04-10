@@ -45,15 +45,16 @@
  '(fringe ((t (:background "#111" :foreground "#444"))))
  '(linum ((t (:background "gray10" :foreground "dim gray"))))
  '(region ((t (:foreground "cyan" :background "dark cyan"))))
- '(show-paren-match ((t (:background "gray12"))))
+ '(highlight ((t (:foreground "#f2f2f2" :background "#141414"))))
+ '(show-paren-match ((t (:background "#1f1f1f"))))
  '(highlight-changes ((t (:foreground nil :background "midnight blue"))))
  '(highlight-changes-delete ((t (:foreground nil :background "chocolate4" :underline nil))))
- '(hl-line ((t (:background "gray25"))))
+ '(hl-line ((t (:background "#404040"))))
  '(secondary-selection ((t (:foreground "black" :background "white smoke"))))
 
  ;; All font locks
  '(font-lock-builtin-face ((t (:foreground "LightSteelBlue"))))
- '(font-lock-comment-face ((t (:foreground "#6b5745" :italic t :background "gray8"))))
+ '(font-lock-comment-face ((t (:foreground "#6b5745" :italic t :background "#141414"))))
  '(font-lock-constant-face ((t (:foreground "indianred"))))
  '(font-lock-doc-string-face ((t (:foreground "SeaGreen2" :bold t))))
  '(font-lock-keyword-face ((t (:foreground "SkyBlue" :bold t))))
@@ -101,7 +102,22 @@
  '(org-deadline-announce ((t (:foreground "Salmon"))))
  '(org-upcoming-deadline ((t (:foreground "Salmon"))))
  '(org-upcoming-distant-deadline ((t (:foreground "#8c5353"))))
- '(org-warning ((t (:bold t :foreground "#ff3333" :weight bold)))))
+ '(org-warning ((t (:bold t :foreground "#ff3333" :weight bold))))
+
+ ;; org heading levels
+ '(org-level-1 ((t (:bold t :foreground "#4682b4" :weight bold))))
+ '(org-level-2 ((t (:bold t :foreground "#778899" :weight bold))))
+ '(org-level-3 ((t (:bold t :foreground "#5f6e70" :weight bold))))
+ '(org-level-4 ((t (:bold t :foreground "#4f5e70" :weight bold))))
+ '(org-level-5 ((t (:bold t :foreground "#99aabb" :weight bold))))
+ '(org-level-6 ((t (:bold t :foreground "#bbccdd" :weight bold))))
+ '(org-level-7 ((t (:bold t :foreground "#bbbbbb" :weight bold))))
+ '(org-level-8 ((t (:bold t :foreground "#dddddd" :weight bold))))
+ '(org-drawer ((t (:foreground "#252525"))))
+ '(org-special-keyword ((t (:foreground "#777777" :background "#111111"))))
+ '(org-property-value ((t (:foreground "#777777"))))
+ '(org-link ((t (:foreground "#939393" :underline t))))
+ '(org-checkbox-statistics-todo ((t (:foreground "#bebebe")))))
 
 ;;;###autoload
 (when load-file-name
