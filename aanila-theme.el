@@ -1,26 +1,26 @@
 ;;; aanlia-theme.el --- A moderately dark theme
 
-;; Copyright (C) 2015 by Santosh Sivaraj
-
+;; Copyright (C) 2021 by Santosh Sivaraj
+;;
 ;; Author: Santosh Sivaraj <santosh@fossix.org>
 ;; URL: https://github.com/santoshs/aanila
-;; Version: 0.01
-
+;; Version: 0.02
+;;
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
 ;; the Free Software Foundation, either version 3 of the License, or
 ;; (at your option) any later version.
-
+;;
 ;; This program is distributed in the hope that it will be useful,
 ;; but WITHOUT ANY WARRANTY; without even the implied warranty of
 ;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 ;; GNU General Public License for more details.
-
+;;
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
+;;
 ;;; Commentary:
-
+;;
 ;;; Code:
 
 (deftheme aanila
@@ -28,8 +28,7 @@
 
 (custom-theme-set-faces
  'aanila
-
- '(default ((t (:background "black" :foreground "lightgray"))))
+ '(default ((t (:background "black" :foreground "gray"))))
  '(background-toolbar-color ((t (:foregroung "#000"))))
  '(border ((t (:foreground "black"))))
  '(bottom-toolbar-shadow-color ((t (:foreground "black"))))
@@ -42,11 +41,10 @@
  '(modeline-mousable ((t (:background "#000" :foreground "#555"))))
  '(modeline-mousable-minor-mode ((t (:background "#000" :foreground "#555"))))
  '(which-func ((t (:inherit mode-line))))
- '(fringe ((t (:background "#111" :foreground "#444"))))
- '(linum ((t (:background "gray10" :foreground "dim gray"))))
+ '(fringe ((t (:background "black" :foreground "#444444"))))
+ '(linum ((t (:background "black" :foreground "dim gray" :weight normal))))
  '(region ((t (:foreground "cyan" :background "dark cyan"))))
  '(highlight ((t (:foreground "#f2f2f2" :background "#141414"))))
- '(show-paren-match ((t (:background "#1f1f1f"))))
  '(highlight-changes ((t (:foreground nil :background "midnight blue"))))
  '(highlight-changes-delete ((t (:foreground nil :background "chocolate4" :underline nil))))
  '(hl-line ((t (:background "#404040"))))
@@ -54,7 +52,7 @@
 
  ;; All font locks
  '(font-lock-builtin-face ((t (:foreground "LightSteelBlue"))))
- '(font-lock-comment-face ((t (:foreground "#6b5745" :italic t :background "#141414"))))
+ '(font-lock-comment-face ((t (:foreground "#6b5745" :italic t :background "#141414" :extend t))))
  '(font-lock-constant-face ((t (:foreground "indianred"))))
  '(font-lock-doc-string-face ((t (:foreground "SeaGreen2" :bold t))))
  '(font-lock-keyword-face ((t (:foreground "SkyBlue" :bold t))))
@@ -103,6 +101,10 @@
  '(org-upcoming-deadline ((t (:foreground "Salmon"))))
  '(org-upcoming-distant-deadline ((t (:foreground "#8c5353"))))
  '(org-warning ((t (:bold t :foreground "#ff3333" :weight bold))))
+ '(org-meta-line ((t (:foreground "dim gray"))))
+ '(org-block ((t (:background "gray3" :extend t))))
+ '(org-block-begin-line ((t (:foreground "gray20" :underline t :extend t))))
+ '(org-block-end-line ((t (:foreground "gray20" :overline t :extend t))))
 
  ;; org heading levels
  '(org-level-1 ((t (:bold t :foreground "#4682b4" :weight bold))))
@@ -117,7 +119,8 @@
  '(org-special-keyword ((t (:foreground "#777777" :background "#111111"))))
  '(org-property-value ((t (:foreground "#777777"))))
  '(org-link ((t (:foreground "#939393" :underline t))))
- '(org-checkbox-statistics-todo ((t (:foreground "#bebebe")))))
+ '(org-checkbox-statistics-todo ((t (:foreground "#bebebe"))))
+ '(show-paren-match ((t (:foreground "light gray" :background "gray10" :extend t)))))
 
 ;;;###autoload
 (when load-file-name
